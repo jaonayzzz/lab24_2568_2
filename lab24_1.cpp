@@ -63,4 +63,33 @@ void List::append(int d){
 	size++;
 }
 
-//Write List::remove() here
+void List::remove(int idx){
+    if(root == NULL){
+        cout <<"List is empty.\n";
+        return;
+    }
+    
+    Node *toDelete;
+    
+    if(idx == 0){
+        toDelete = root;
+        root = root->next;
+        delete toDelete;
+        size--;
+        return;
+    }
+    
+    Node *current = root;
+    for(int i=0; i < idx-1; i++){
+        if(current->next == NULL){
+            cout << "Index out of range.\n";
+            return;
+        }
+        current = current -> next;
+    }
+    
+    toDelete = current -> next;
+    current -> next = toDelete->next;
+    delete toDelete;
+    size--;
+}
