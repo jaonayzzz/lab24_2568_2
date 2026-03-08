@@ -5,7 +5,7 @@ using namespace std;
 int count(int arr[], int size){
     set<int> numnum;
     for(int i=0; i<size; i++){
-        numnum.insert(arr[i]);
+        numnum.insert(arr[i]);//เก็บข้อมูลใส่เซ็ต
     }
     return numnum.size();
 }

@@ -62,7 +62,7 @@ void List::append(int d){
 	}
 	size++;
 }
-
+//คำสั่งลบออก
 void List::remove(int idx){
     if(root == NULL){
         cout <<"List is empty.\n";
