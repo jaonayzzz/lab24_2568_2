@@ -22,7 +22,7 @@ int main(){
 	
 	loc = find(line_up.begin(),line_up.end(),"Bob");
 	line_up.insert(loc,"Oscar");
-	//เขียนโค้ดตรงนี้
+	// เขียนโค้ดตรงนี้
 		line_up.push_back("Luffy");
 	line_up.push_back("Sanji");
 	line_up.push_back("Nami");
